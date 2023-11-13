@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.83-alpha">
+  <PropertyGroup>
+    <StartupCommand>set BROWSER=none&amp;&amp;npm start</StartupCommand>
+    <JavaScriptTestRoot>src\</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
+    <!-- Command to run on project build -->
+    <BuildCommand>
+    </BuildCommand>
+    <!-- Command to create an optimized build of the project that's ready for publishing -->
+    <ProductionBuildCommand>npm run build</ProductionBuildCommand>
+    <!-- Folder where production build objects will be placed -->
+    <BuildOutputFolder>$(MSBuildProjectDirectory)\build</BuildOutputFolder>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\components\Answer\" />
+    <Folder Include="src\components\Center\" />
+    <Folder Include="src\components\Authenticate\" />
+    <Folder Include="src\components\Result\" />
+    <Folder Include="src\components\Quiz\" />
+    <Folder Include="src\components\Layout\" />
+    <Folder Include="src\components\Login\" />
+    <Folder Include="src\hooks\" />
+    <Folder Include="src\api\" />
+    <Folder Include="src\helper\" />
+  </ItemGroup>
+</Project>
